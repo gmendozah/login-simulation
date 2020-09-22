@@ -6,24 +6,22 @@ module.exports = (req, res, next) => {
         if (req.body.username === user1 ||
             req.body.username === user2 ||
             req.body.username === user3) {
-            if (req.body.password === '12345') {
+            if (req.body.username === user1 && req.body.attempts >= 3) {
+                res.status(200).json({
+                    data: {
+                        'accessToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoYXNDYXJkIjp0cnVlLCJpc0Jsb2NrZWQiOnRydWUsImlkIjoxfQ.K_gZaCBFncBxosU7k6oVM_Hv3lJeOeMxvv2dqEGPFl4',
+                        'refreshToken': 'hello-world'
+                    }
+                })
+            } else if (req.body.password === '12345') {
                 switch (req.body.username) {
                     case user1:
-                        if(req.body.attempts >=3){
-                            res.status(200).json({
-                                data: {
-                                    'accessToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoYXNDYXJkIjp0cnVlLCJpc0Jsb2NrZWQiOnRydWUsImlkIjoxfQ.K_gZaCBFncBxosU7k6oVM_Hv3lJeOeMxvv2dqEGPFl4',
-                                    'refreshToken': 'hello-world'
-                                }
-                            })
-                        } else {
-                            res.status(200).json({
-                                data: {
-                                    'accessToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoYXNDYXJkIjp0cnVlLCJpc0Jsb2NrZWQiOmZhbHNlLCJpZCI6MX0.iDi1iGXpOd0aLTKWR_rRRCE0IdW0zJWNIhEwAMOmyD0',
-                                    'refreshToken': 'hello-world'
-                                }
-                            })
-                        }
+                        res.status(200).json({
+                            data: {
+                                'accessToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoYXNDYXJkIjp0cnVlLCJpc0Jsb2NrZWQiOmZhbHNlLCJpZCI6MX0.iDi1iGXpOd0aLTKWR_rRRCE0IdW0zJWNIhEwAMOmyD0',
+                                'refreshToken': 'hello-world'
+                            }
+                        })
                         break;
                     case user2:
                         res.status(200).json({
