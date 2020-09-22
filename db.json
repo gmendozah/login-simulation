@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "loginAttempts": 0
+    },
+    {
+      "id": 2,
+      "name": "Mary Sue",
+      "loginAttempts": 0
+    },
+    {
+      "id": 3,
+      "name": "Sam Lopez",
+      "loginAttempts": 3
+    }
+  ]
+}
