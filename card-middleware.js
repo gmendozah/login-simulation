@@ -12,7 +12,7 @@ module.exports = (req, res, next) => {
             req.body.cardNumber === card4 ||
             req.body.cardNumber === card5) && req.body.pinNumber === pin) {
             if (req.body.attempts >= 4) {
-                res.status(400).json({
+                res.status(200).json({
                     message: 'card is blocked till tomorrow',
                     error: 1500
                 })
@@ -58,13 +58,13 @@ module.exports = (req, res, next) => {
                         })
                         break;
                     case card4:
-                        res.status(400).json({
+                        res.status(200).json({
                             message: 'User not registered',
                             error: 1400
                         })
                         break;
                     case card5:
-                        res.status(400).json({
+                        res.status(200).json({
                             message: 'card is blocked till tomorrow',
                             error: 1500
                         })
