@@ -15,7 +15,7 @@ module.exports = (req, res, next) => {
                 res.status(400).json({
                     message: 'card is blocked till tomorrow',
                     error: 1500
-                })//
+                })
             } else {
                 switch (req.body.cardNumber) {
                     case card1: // jhon doe
@@ -61,13 +61,13 @@ module.exports = (req, res, next) => {
                         res.status(400).json({
                             message: 'User not registered',
                             error: 1400
-                        })//none
+                        })
                         break;
                     case card5:
                         res.status(400).json({
                             message: 'card is blocked till tomorrow',
                             error: 1500
-                        })//none
+                        })
                         break;
                 }
             }
