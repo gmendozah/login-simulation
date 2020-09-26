@@ -15,5 +15,67 @@
       "name": "Sam Lopez",
       "loginAttempts": 3
     }
+  ],
+  "security_question" : [
+    {
+      "id": 1,
+      "question": "¿Cuál es el nombre de su primer supervisor?"
+    },
+    {
+      "id": 2,
+      "question": "¿Cuál es el nombre de su primera mascota?"
+    },
+    {
+      "id": 3,
+      "question": "¿Cuál es el nombre de su sobrino(a) mayor?"
+    },
+    {
+      "id": 4,
+      "question": "¿Cuál era el nombre su escuela de primer grado?"
+    },
+    {
+      "id": 5,
+      "question": "¿Cuál es el segundo apellido de su padre?"
+    },
+    {
+      "id": 6,
+      "question": "¿Cuál es el segundo nombre de su padre?"
+    },
+    {
+      "id": 7,
+      "question": "¿Cúal es su equipo de football favorito?"
+    },
+    {
+      "id": 8,
+      "question": "¿Cuál es su palabra/frase favorita?"
+    },
+    {
+      "id": 9,
+      "question": "¿Cuál es su vacación favorita?"
+    },
+    {
+      "id": 10,
+      "question": "¿Cuál fué su primer número telefónico?"
+    },
+    {
+      "id": 11,
+      "question": "¿En que ciudad estaba su escuela superior?"
+    },
+    {
+      "id": 12,
+      "question": "¿En qué ciudad nació su padre?"
+    },
+    {
+      "id": 13,
+      "question": "¿Cuál es su comida favorita?"
+    },
+    {
+      "id": 14,
+      "question": "¿En qué ciudad se casó?"
+    },
+    {
+      "id": 15,
+      "question": " ¿Cuál es su color favorito?"
+    }
   ]
 }
