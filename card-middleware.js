@@ -12,44 +12,44 @@ module.exports = (req, res, next) => {
                     message: 'User blocked',
                     error: 1000
                 })
-            }else {
-                switch (req.body.username) {
+            } else {
+                switch (req.body.cardNumber) {
                     case card1: // jhon doe
                         res.status(200).json({
                             data: {
-                                'question1': 2,
-                                'question2': 6,
-                                'question3': 11,
-                                'answer1': 'mascota',
-                                'answer2': 'padre',
-                                'answer3': 'superior',
-                                'username':'john.doe@gmail.com',
+                                question1: 2,
+                                question2: 6,
+                                question3: 11,
+                                answer1: 'mascota',
+                                answer2: 'padre',
+                                answer3: 'superior',
+                                username: 'john.doe@gmail.com'
                             }
                         })
                         break;
                     case card2: //
                         res.status(200).json({
                             data: {
-                                'question1': 3,
-                                'question2': 7,
-                                'question3': 13,
-                                'answer1': 'mayor',
-                                'answer2': 'favorito',
-                                'answer3': 'favorita',
-                                'username':'mary.sue@gmail.com',
+                                question1: 3,
+                                question2: 7,
+                                question3: 13,
+                                answer1: 'mayor',
+                                answer2: 'favorito',
+                                answer3: 'favorita',
+                                username: 'mary.sue@gmail.com'
                             }
                         })// mary sue
                         break;
                     case card3: // sam
                         res.status(200).json({
                             data: {
-                                'question1': 4,
-                                'question2': 8,
-                                'question3': 14,
-                                'answer1': 'grado',
-                                'answer2': 'favorita',
-                                'answer3': 'casó',
-                                'username':'sam@gmail.com',
+                                question1: 4,
+                                question2: 8,
+                                question3: 14,
+                                answer1: 'grado',
+                                answer2: 'favorita',
+                                answer3: 'casó',
+                                username: 'sam@gmail.com'
                             }
                         })// mary
                         break;
