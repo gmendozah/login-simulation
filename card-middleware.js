@@ -72,10 +72,17 @@ module.exports = (req, res, next) => {
                 }
             }
         } else {
-            res.status(400).json({
-                message: 'Card not found',
-                error: 1300
-            })
+            if (req.body.cardNumber === card1 && req.body.attempts >= 4) {
+                res.status(200).json({
+                    message: 'card is blocked till tomorrow',
+                    error: 1500
+                })
+            } else {
+                res.status(400).json({
+                    message: 'Card not found',
+                    error: 1300
+                })
+            }
         }
     } else {
         next()
