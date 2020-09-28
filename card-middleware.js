@@ -11,7 +11,7 @@ module.exports = (req, res, next) => {
             req.body.cardNumber === card3 ||
             req.body.cardNumber === card4 ||
             req.body.cardNumber === card5) && req.body.pinNumber === pin) {
-            if (req.body.attempts >= 4) {
+            if (req.body.cardNumber === card1 && req.body.attempts >= 4) {
                 res.status(200).json({
                     message: 'card is blocked till tomorrow',
                     error: 1500
